@@ -16,16 +16,16 @@ This is for web mvc layer
  */
 
 @Configuration
-@ComponentScan(basePackages = {"com.rashid.capp"})
+@ComponentScan(basePackages = {"com.rashid.capp.*"})
 @EnableWebMvc
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
-
+ 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         /*
         To access static resources like css,js files
          */
-        //TODO
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
     }
 
     @Bean

@@ -10,7 +10,8 @@ For front controller
 
  */
 public class ContactAppDispatcherServletinitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-    @Override
+   
+	@Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{SpringRootConfig.class};
     }

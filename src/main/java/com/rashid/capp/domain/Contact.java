@@ -9,8 +9,14 @@ public class Contact {
     private String email;
     private String address;
     private String remark;
+    
+    
 
-    public Contact(Integer contactId) {
+    public Contact() {
+
+	}
+
+	public Contact(Integer contactId) {
         this.contactId = contactId;
     }
 
